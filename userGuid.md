@@ -60,8 +60,21 @@ DataX本身作为数据同步框架，将不同数据源的同步抽象为从源
     $ ls ./target/datax/datax/
     bin		conf		job		lib		log		log_perf	plugin		script		tmp
     ```
-
-
+    
+    **Attention：This artifact eigenbase:eigenbase-properties:jar:1.1.4 is not in aliyun public repository, maybe your maven setting file only has public repository of aliyun.Add central repository as a mirror in your maven setting file, then it will be fixed.**
+    ```
+     <mirror>
+	    <id>aliyunmaven</id>
+	    <mirrorOf>central</mirrorOf>
+	    <name>aliyun</name>
+	    <url>https://maven.aliyun.com/repository/public</url>
+    </mirror>
+    <mirror>
+	   <id>aliyunmaven1</id>
+	   <mirrorOf>central</mirrorOf>
+	   <name>aliyun1</name>
+	   <url>https://maven.aliyun.com/repository/spring</url>
+    </mirror>
 * 配置示例：从stream读取数据并打印到控制台
   
   * 第一步、创建作业的配置文件（json格式）
