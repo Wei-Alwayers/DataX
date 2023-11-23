@@ -219,7 +219,7 @@ createPartitionedTable(db, model, `Snapshot, `DateTime`SecurityID)
 
 ### 5.2 测试报告
 
-| 指标         | 数值1      |
+| 指标         | 数值 |
 | ------------ | ---------- |
 | 任务平均流量 | 5.80MB/S   |
 | 记录写入速度 | 16000rec/S |
