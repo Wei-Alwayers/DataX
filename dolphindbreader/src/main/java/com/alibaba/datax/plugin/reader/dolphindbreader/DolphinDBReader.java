@@ -148,7 +148,7 @@ public class DolphinDBReader extends Reader {
                 this.dbPath = this.readerConfig.getString(Key.DB_PATH);
                 this.tableName = this.readerConfig.getString(Key.TABLE_NAME);
                 this.where = this.readerConfig.getString(Key.WHERE);
-                List<Object> tableField = this.readerConfig.getList(Key.TABLE);
+                List<Object> tableField = this.readerConfig.getList(Key.COLUMNS);
                 JSONArray fieldArr = JSONArray.parseArray(JSON.toJSONString(tableField));
                 this.querySql = this.readerConfig.getString(Key.QUERY_SQL);
 

@@ -37,7 +37,7 @@ dolphindbreader 底层依赖 DolphinDB Java API，采用批量读出的方式将
         "reader": {
           "name": "dolphindbreader",
           "parameter": {
-            "table": [
+            "columns": [
               {
                 "name": "id"
               },
@@ -137,7 +137,7 @@ dolphindbreader 底层依赖 DolphinDB Java API，采用批量读出的方式将
   - 描述: 可以通过指定 where 来设置条件，比如 "id >10 and name = `dolphindb"。
   - 必选: 是。
   - 默认值: 无。
--  table
+-  columns
    - 描述：读出表的字段集合。内部结构为：`{"name": "columnName"}`。请注意此处列定义的顺序，需要与原表提取的列顺序完全一致。
    - 必选: 是。
    - 默认值: 无。
