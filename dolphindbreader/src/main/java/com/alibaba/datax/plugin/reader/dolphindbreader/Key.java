@@ -18,7 +18,7 @@ public class Key {
 
     public final static String WHERE = "where";
 
-    public final static String TABLE = "table";
+    public final static String COLUMNS = "columns";
 
     public final static String QUERY_SQL = "querySql";
 }
